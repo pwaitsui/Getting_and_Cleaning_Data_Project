@@ -11,10 +11,19 @@ Human Activity Recongnition Using Smartphones Raw Data set:
 Information about the raw data set can be found at the following location:
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 
-# run_analysis.R
+# The Script
 
-R library `dplyr` is required to run the script `run_analysis.R`.  The script does try to install the library if it is unavailable.
+Located in this Repository is the R script `run_analysis.R` that is used to transform the raw data set.  It does the following:
 
-```R
-library(dplyr)
-```
+<ol>
+<li>Setup directory structure and load raw data in to dataframes</li>
+<li>Row binds training and test dataframes for subject, X, and Y</li>
+<li>Isolate the column index for `mean` and `std` (standard deviation) from features to select the corresponding columns on the X dataframe</li>
+<li>Use activity and features to label X and Y dataframes</li>
+<li>Column binds Subject, X, and Y into a single dataframe</li>
+<li>Use `dplyr` funtions `chain`, `select`, `group_by`, and `summarise_each` to take the average for all the activity means and std's and create a tidy data set</li>
+<li>Finally, the tidy data is outputted to the current working directory. The filename is called `tidy_output.txt`.</li>
+</ol>
+
+Please note that the R library `dplyr` is required to run the script `run_analysis.R`.  The script does try to install the library if it is unavailable.
+
