@@ -9,6 +9,7 @@ Human Activity Recongnition Using Smartphones Raw Data set:
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 Information about the raw data set can be found at the following location:
+
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 
 # The Script
