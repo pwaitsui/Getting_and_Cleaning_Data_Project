@@ -28,7 +28,7 @@
 <tr>
 <td class="left">activity</td>
 <td class="left">character</td>
-<td class="left">Activity performed by subject (walking, laying, etc.)</td>
+<td class="left">Activity performed by subject (laying, sitting, standing, walking, walking_downstairs, and, walking_upstairs)</td>
 </tr>
 
 
